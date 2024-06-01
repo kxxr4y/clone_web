@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+main {
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 76px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+header .logo {
+    width: 210px;
+    height: 70px;
+    align-items: center;
+    position: relative;
+}
+header .logo > img {
+    width: 190px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.menu {
+    width: 600px;
+    overflow: hidden;
+    margin: 16px auto;
+    display: flex;
+}
+.menu > li {
+    width: 20%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+.menu > li:hover {
+    transition-duration: 0.5s;
+}
+.menu > li:hover .submenu {
+    height: 250px;
+    transition-duration: 1s;
+}
+.menu > li > a:hover {
+    color: orange;
+}
+.menu a {
+    color: #fff;
+}
+.submenu > li {
+    line-height: 50px;
+    background-color: gray;
+    color: white;
+    font-size: 13px;
+}
+.submenu {
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+}
+.submenu > li:hover {
+    background-color: orange; /* 호버시 색상 변경 */
+}
